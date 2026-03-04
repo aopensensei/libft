@@ -4,5 +4,5 @@
 # include <stddef.h>
 
 size_t	ft_strlen(const char *str);
-int	ft_isdigit(char ch);
+int	ft_isdigit(int ch);
 #endif

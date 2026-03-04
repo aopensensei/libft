@@ -6,11 +6,11 @@
 /*   By: tmaeda <tmaeda@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/04 21:04:59 by tmaeda            #+#    #+#             */
-/*   Updated: 2026/03/04 21:05:16 by tmaeda           ###   ########.fr       */
+/*   Updated: 2026/03/04 21:26:00 by tmaeda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isdigit(char ch)
+int	ft_isdigit(int ch)
 {
 	return (ch >= '0' && ch <= '9');
 }
