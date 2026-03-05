@@ -17,5 +17,5 @@ void	ft_bzero(void *buf, size_t len);
 void	*ft_memcpy(void *dst, const void *src, size_t len);
 void	*ft_memmove(void *dst, const void *src, size_t len);
 void	*ft_memchr(const void *buf, int ch, size_t len);
-void	*ft_memcmp(const void *b1, const void *b2, size_t len);
+int	ft_memcmp(const void *b1, const void *b2, size_t len);
 #endif
