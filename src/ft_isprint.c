@@ -1,18 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalnum.c                                       :+:      :+:    :+:   */
+/*   ft_isprint.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tmaeda <tmaeda@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/03/05 00:32:14 by tmaeda            #+#    #+#             */
-/*   Updated: 2026/03/05 17:21:23 by tmaeda           ###   ########.fr       */
+/*   Created: 2026/03/05 17:20:04 by tmaeda            #+#    #+#             */
+/*   Updated: 2026/03/05 17:20:08 by tmaeda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
-int	ft_isalnum(int ch)
+int	ft_isprint(int ch)
 {
-	return (ft_isalpha(ch) || ft_isdigit(ch));
+	return (ch >= ' ' && ch <= '~');
 }
