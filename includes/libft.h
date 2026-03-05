@@ -11,4 +11,7 @@ int	ft_isascii(int ch);
 int	ft_isprint(int ch);
 int	ft_toupper(int ch);
 int	ft_tolower(int ch);
+
+void	*memset(void *buf, int ch, size_t len);
+
 #endif
