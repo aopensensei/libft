@@ -3,7 +3,6 @@
 
 # include <stddef.h>
 
-size_t	ft_strlen(const char *str);
 int	ft_isdigit(int ch);
 int	ft_isalpha(int ch);
 int	ft_isalnum(int ch);
@@ -18,4 +17,9 @@ void	*ft_memcpy(void *dst, const void *src, size_t len);
 void	*ft_memmove(void *dst, const void *src, size_t len);
 void	*ft_memchr(const void *buf, int ch, size_t len);
 int	ft_memcmp(const void *b1, const void *b2, size_t len);
+
+size_t  ft_strlen(const char *str);
+char	*ft_strchr(const char *str, int ch);
+
+>>>>>>> e7e79c8 (add ft_strchr.c)
 #endif
