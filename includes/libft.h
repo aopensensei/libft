@@ -24,4 +24,5 @@ char    *ft_strrchr(const char *str, int ch);
 size_t	ft_strlcpy(char *dst, char *src, size_t dstsize);
 size_t	ft_strlcat(char *dst, char *src, size_t dstsize);
 int		ft_strncmp(char *s1, char *s2, size_t len);
+char	*ft_strnstr(char *str, char *to_find, size_t len);
 #endif
