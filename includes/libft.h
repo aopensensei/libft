@@ -21,5 +21,4 @@ int	ft_memcmp(const void *b1, const void *b2, size_t len);
 size_t  ft_strlen(const char *str);
 char	*ft_strchr(const char *str, int ch);
 
->>>>>>> e7e79c8 (add ft_strchr.c)
 #endif
