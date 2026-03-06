@@ -20,5 +20,6 @@ int	ft_memcmp(const void *b1, const void *b2, size_t len);
 
 size_t  ft_strlen(const char *str);
 char	*ft_strchr(const char *str, int ch);
+size_t	ft_strlcpy(char *dst, char *src, size_t dstsize);
 
 #endif
