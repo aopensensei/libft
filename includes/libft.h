@@ -2,6 +2,8 @@
 # define LIBFT_H
 
 # include <stddef.h>
+# include <stdlib.h>
+# include <stdint.h>
 
 int		ft_isdigit(int ch);
 int		ft_isalpha(int ch);
@@ -25,4 +27,7 @@ size_t	ft_strlcpy(char *dst, char *src, size_t dstsize);
 size_t	ft_strlcat(char *dst, char *src, size_t dstsize);
 int		ft_strncmp(char *s1, char *s2, size_t len);
 char	*ft_strnstr(char *str, char *to_find, size_t len);
+char	*ft_strdup(char *str);
+
+void	*ft_calloc(size_t number, size_t size);
 #endif
