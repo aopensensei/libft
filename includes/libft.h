@@ -30,4 +30,7 @@ char	*ft_strnstr(char *str, char *to_find, size_t len);
 char	*ft_strdup(char *str);
 
 void	*ft_calloc(size_t number, size_t size);
+
+char	*ft_substr(char const *s, unsigned int start, size_t len);
+char	*ft_strjoin(char const *s1, char const *s2);
 #endif
