@@ -1,30 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstsize.c                                       :+:      :+:    :+:   */
+/*   ft_lstdelone.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tmaeda <tmaeda@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/26 11:07:08 by tmaeda            #+#    #+#             */
-/*   Updated: 2026/04/26 11:07:11 by tmaeda           ###   ########.fr       */
+/*   Created: 2026/04/26 11:53:03 by tmaeda            #+#    #+#             */
+/*   Updated: 2026/04/26 12:12:54 by tmaeda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_lstsize(t_list *lst)
+void	ft_lstdelone(t_list *lst, void (*del)(void *))
 {
-	int		size;
-	t_list	*node;
-
-	node = lst;
-	if (node == NULL)
-		return (0);
-	size = 1;
-	while (node->next != NULL)
-	{
-		node = node->next;
-		size++;
-	}
-	return (size);
+	if (lst == NULL || del == NULL)
+		return ;
+	if (lst->content != NULL)
+		del(lst->content);
+	free(lst);
 }
