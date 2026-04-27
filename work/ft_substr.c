@@ -12,6 +12,17 @@
 
 #include "libft.h"
 
+static char	*get_empstr(void)
+{
+	char	*p;
+
+	p = (char *)malloc(1);
+	if (!p)
+		return (NULL);
+	p[0] = '\0';
+	return (p);
+}
+
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	size_t	slen;
@@ -19,7 +30,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 
 	slen = ft_strlen(s);
 	if (len == 0 || slen <= start)
-		return (NULL);
+		return (get_empstr());
 	if (len > slen - start)
 		len = slen - start;
 	rt = (char *)malloc(sizeof(char) * (len + 1));

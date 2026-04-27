@@ -46,7 +46,7 @@ char	*ft_itoa(int n)
 	rt[len + sign] = '\0';
 	while (len)
 	{
-		rt[--len + sign] = l_nmb % 10 - '0';
+		rt[--len + sign] = l_nmb % 10 + '0';
 		l_nmb = l_nmb / 10;
 	}
 	if (sign == 1)

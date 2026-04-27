@@ -14,11 +14,22 @@
 
 void	ft_putnbr_fd(int n, int fd)
 {
-	char	*str;
+	long	l_nmb;
+	long	dig_div;
 
-	str = ft_itoa(n);
-	if (!str)
-		return ;
-	ft_putstr_fd(str, fd);
-	free(str);
+	l_nmb = (long)n;
+	if (l_nmb < 0)
+	{
+		write(fd, "-", 1);
+		l_nmb = -l_nmb;
+	}
+	dig_div = 1;
+	while (l_nmb / dig_div >= 10)
+		dig_div = dig_div * 10;
+	while (dig_div > 0)
+	{
+		ft_putchar_fd((l_nmb / dig_div) + '0', fd);
+		l_nmb = l_nmb % dig_div;
+		dig_div = dig_div / 10;
+	}
 }

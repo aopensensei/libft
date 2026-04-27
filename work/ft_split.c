@@ -33,6 +33,7 @@ static size_t	count_strs(char const *s, char c)
 				cnt++;
 			after_deli = 0;
 		}
+		i++;
 	}
 	return (cnt);
 }

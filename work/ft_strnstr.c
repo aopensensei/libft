@@ -35,6 +35,7 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 			return ((char *)&big[i]);
 		if (big[i + j] == '\0')
 			return (NULL);
+		i++;
 	}
 	return (NULL);
 }
