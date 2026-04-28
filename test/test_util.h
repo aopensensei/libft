@@ -14,5 +14,11 @@ void	print_group(char *name);
 void	free_str_array(char **arr);
 
 void	test_01_char(void);
+void	test_02_string(void);
+void	test_03_memory(void);
+void	test_04_create(void);
+void	test_05_iter(void);
+void	test_06_fd(void);
+void	test_07_list(void);
 
 #endif

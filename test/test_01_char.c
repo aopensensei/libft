@@ -150,7 +150,7 @@ void	test_ft_tolower(void)
 
 void	test_01_char(void)
 {
-	print_group("01 char classification and conversion");
+	print_group("01 char 文字判定 / 変換");
 	test_ft_isalpha();
 	test_ft_isdigit();
 	test_ft_isalnum();
