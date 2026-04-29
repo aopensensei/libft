@@ -21,4 +21,6 @@ void	test_05_iter(void);
 void	test_06_fd(void);
 void	test_07_list(void);
 
+void	test_ft_lst_sequence(void);
+
 #endif

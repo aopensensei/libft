@@ -9,5 +9,6 @@ int	main(void)
 	//test_05_iter();
 	//test_06_fd();
 	//test_07_list();
+	test_ft_lst_sequence();
 	return (0);
 }
